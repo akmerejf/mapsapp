@@ -1,0 +1,29 @@
+<nav class="light-blue lighten-1" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="./" class="brand-logo"><%= image_tag("comida", style: "height: 56px;")%></a>
+      <ul class="right hide-on-med-and-down">
+       <li><%= link_to "Cadastrar", new_company_path %></li>
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+      <li><%= link_to "Inicio", root_path %></li>
+      <li><%= link_to "Cadastrar", new_company_path %></li>
+      <li class="no-padding">
+        <ul class="collapsible collapsible-accordion">
+          <li>
+            <a class="collapsible-header">Dropdown<i class="material-icons">arrow_drop_down</i></a>
+            <div class="collapsible-body">
+              <ul>
+                <li><a href="#!">Inicio</a></li>
+                <li><a href="#!">Second</a></li>
+                <li><a href="#!">Third</a></li>
+                <li><a href="#!">Fourth</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </li>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menus</i></a>
+    </div>
+  </nav>
+  
